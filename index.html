@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>PhotographyCamera</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho navegacao">
+            <div class="navegacao">
+                <input type="checkbox" id="menu" class="navegacao__menu">
+                <label for="menu" class="navegacao__rotulo">
+                    <span class="navegacao__menu-hambugues"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item__login"><a href="#" class="lista-menu__link__login">Login / Cadastre-se</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Fotos</a></li>
+                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Paisagem</a></li>
+                    <li class="lista-menu__item__favoritos"><a href="#" class="lista-menu__link">Favoritos</a></li>
+                </ul>
+                <ul class="lista-menu__tablet">
+                    <li class="lista-tablet__item__cadastre-se"><a href="#" class="lista-tablet__link">Cadastre-se</a></li>
+                    <li class="lista-tablet__item"><a href="#" class="lista-tablet__link">Favoritos</a></li>
+                    <li class="lista-tablet__item__loga-se"><a href="#" class="lista-tablet__link">login</a></li>
+                </ul>
+            </div>
+            <h1 class="cabecalho__titulo"><a href="#" class="cabecalho__link">PhotographyCamera</a></h1>
+            <div class="navegacao__cabecalho">
+                <ul class="navegacao__lista">
+                    <li><a href="#" class="lista__link">Home</a></li>
+                    <li><a href="#" class="lista__link">Fotos</a></li>
+                    <li><a href="#" class="lista__link">Paisagem</a></li>
+                    <li><a href="#" class="lista__link__deskot">Favoritos</a></li>
+                    <li><a href="#" class="lista__link__deskot">Login / Cadastre-se</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container__conteudo  conteudo">
+            <div class="conteudo__apresentacao">
+                <h2 class="conteudo__titulo">Bem-vindo ao <strong class="titulo__negrito">PhotographyCamera</strong></h2>
+                <a href="#" class="conteudo__link">Cadastre-se</a>
+            </div>
+            <div>
+                <img class="conteudo__imagem" src="src/image/paisagem.svg" alt="Demostração das imagens que pode ser encontradas no PhotographyCamera">
+            </div>
+        </section>
+        <section class="conteudo">
+            <div class="conteudo__informacoes-paisagem">
+                <img class="informacoes__imagem" src="src/image/floresta.svg" alt="Icone de Paisagem">
+                <div class="informacoes-imagem">
+                    <h2 class="informacoes-imagem__titulo">+150mil Paisagem</h2>
+                    <p class="informacoes-imagem__texto">Explore uma coleção extraordinária de mais de 150 mil paisagens capturadas ao redor do mundo, disponíveis exclusivamente no PhotographyCamera. Cada imagem revela a beleza natural em suas diversas formas – desde montanhas majestosas até praias serenas, desertos vastos e florestas exuberantes.</p>
+                </div>
+            </div>
+            <div class="conteudo__informacoes-imagem">
+                <img class="informacoes__imagem" src="src/image/galeria-de-imagens.svg" alt="Icone de Fotos">
+                <div class="informacoes-imagem">
+                    <h2 class="informacoes-imagem__titulo">+100mil Fotos</h2>
+                    <p class="informacoes-imagem__texto">Encontre no PhotographyCamera uma coleção de mais de 100 mil fotos exclusivas, capturadas em cenários impressionantes ao redor do mundo. Cada imagem revela a beleza e diversidade dos mais variados ambientes naturais, desde montanhas imponentes até florestas exuberantes e praias paradisíacas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container__conteudo-perguntas">
+            <h2 class="conteudo-perguntas__titulo-perguntas">Todas as imagens são <strong class="titulo-perguntas__negrito">Gratuitas?</strong></h2>
+            <p class="conteudo-perguntas__texto">Todas as imagens disponíveis no <strong class="texto__negrito">PhotographyCamera</strong> são gratuitas, e você pode escolher a resolução, que varia de Full HD até 4K, garantindo alta qualidade para suas necessidades. </p>
+        </section>
+        <section class="container__conteudo-formato">
+            <p class="conteudo__texto">As fotos podem ser baixadas em diferentes formatos, como <strong class="texto__negrito">SVG, PDF, JPG, PNG</strong> e <strong class="texto__negrito">GIF</strong>, oferecendo flexibilidade de uso em diversos projetos. </p>
+            <h2 class="conteudo__titulo-perguntas">Posso baixar em qualquer <strong class="titulo-perguntas__negrito">formato?</strong></h2>
+        </section>
+        <section class="container__conteudo-canva">
+            <h2 class="conteudo-canva__titulo-perguntas">Pode importar as imagens para o <strong class="titulo-perguntas__negrito">Canva.</strong></h2>
+            <p class="conteudo-canva__texto">As fotos podem ser baixadas em diferentes formatos, como <strong class="texto__negrito">SVG, PDF, JPG, PNG</strong> e <strong class="texto__negrito">GIF</strong>, oferecendo flexibilidade de uso em diversos projetos. </p>
+        </section>
+        <section class="container__favoritos">
+            <h2 class="favoritos__titulo">Favoritos</h2>
+            <div class="favoritos__imagem">
+                <img class="imagem__icone" src="src/image/gostar.svg" alt="Icone de um coração">
+                <div class="imagem-icone">
+                    <img class="imagem" src="src/image/imagem-de-uma-pessoa.png" alt="Foto de um homem com um coração no lado inferior direito.">
+                    <div class="imagem__fotos-favoritos">
+                        <p class="imagem__texto">No <strong class="texto__negrito">PhotographyCamera</strong>, você pode facilmente marcar suas imagens favoritas para acessá-las rapidamente sempre que precisar.</p>
+                        <a href="#" class="imagem__link">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Nossas redes sociais</h2>
+        <div class="rodape__rede-sociais">
+            <a href="#"><img class="rede-sociais__imagem" src="src/image/facebook.svg" alt="Icone do Facebook"></a>
+            <a href="#"><img class="rede-sociais__imagem" src="src/image/instagram.svg" alt="Icone do Instagram"></a>
+        </div>
+        <p class="rodape__texto">Quem desenvolveu o site:<a href="https://github.com/DiogoCruzFS" class="texto__link">Diogo da Cruz Mello</a></p>
+    </footer>
+</body>
+</html>

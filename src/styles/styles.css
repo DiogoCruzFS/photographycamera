@@ -1,0 +1,31 @@
+@import url("../styles/header.css");
+@import url("../styles/main.css");
+@import url("../styles/rodape.css");
+
+:root {
+    --cor-primarial: #32746D;
+    --cor-segundario: #EEE5E9;
+
+    --fonte-primarial: "inter";
+
+    --fundo-primarial: #000000;
+    --fundo-segundario: #248994;
+
+    --fundo-degrade: linear-gradient(352deg, rgba(0,0,0,1) 26%, rgba(12,45,49,1) 55%, rgba(20,75,82,1) 80%);
+    --fundo-degrade-segundario: linear-gradient(140deg, rgba(0,0,0,1) 15%, rgba(12,45,49,1) 61%, rgba(20,75,82,1) 89%);
+    --fundo-degrade-rodape: linear-gradient(180deg, #000000 19%, #0C2D31 66.5%, #144B52 92%);
+
+    --cor-botao: #183936;
+    --cor-botao-abertado: #248994;
+
+    --degrade: linear-gradient(90deg, rgba(0, 0, 0, 0.048) 0%, rgba(0, 0, 0, 0.24) 55.5%);
+    --degrade-segundario: linear-gradient(90deg, #000000 0%, #0C2D31 77%);
+}
+
+body {
+    background-color: var(--fundo-primarial);
+    font-family: var(--fonte-primarial);
+    font-weight: 700;
+    font-size: 0,9rem;
+    color: var(--cor-primarial);
+}

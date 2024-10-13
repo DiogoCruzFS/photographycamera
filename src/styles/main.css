@@ -1,0 +1,251 @@
+.container {
+    text-align: center;
+}
+
+.container__conteudo {
+    background: var(--fundo-degrade);
+    height: 600px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container__conteudo-formato {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.conteudo__titulo {
+    color: var(--cor-segundario);
+    margin: 1em 3em;
+}
+
+.titulo__negrito, .titulo-perguntas__negrito, .texto__negrito {
+    color: var(--cor-primarial);
+}
+
+.conteudo__titulo, .titulo__negrito {
+    font-size: 1.25rem;
+}
+
+.conteudo__link, .imagem__link {
+    text-decoration: none;
+    color: var(--cor-segundario);
+    background-color: var(--cor-botao);
+    padding: 0.5em;
+    border-radius: 32px;
+    margin-bottom: 10em;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.conteudo__imagem {
+    margin-top: 4em;
+}
+
+.conteudo__link:hover, .imagem__link:hover {
+    background-color: var(--cor-botao-abertado);
+}
+
+.conteudo__informacoes-imagem, .conteudo__informacoes-paisagem {
+    margin: 4em 3em;
+}
+
+.informacoes-imagem__titulo {
+    font-size: 1.25rem;
+    margin: 1em 0;
+}
+
+.informacoes-imagem__texto {
+    color: var(--cor-segundario);
+    font-size: 0.875rem;
+}
+
+.container__conteudo-perguntas {
+    background: var(--fundo-degrade);
+    height: 291px;
+    padding-top: 0.2em;
+}
+
+.conteudo-perguntas__titulo-perguntas, .conteudo__titulo-perguntas, .conteudo-canva__titulo-perguntas {
+    font-size: 1.25rem;
+    color: var(--cor-segundario);
+    margin: 2em 3em 0 3em;
+}
+
+.conteudo-perguntas__texto, .conteudo__texto, .conteudo-canva__texto {
+    font-size: 0.875rem;
+    color: var(--cor-segundario);
+    margin: 4em 2em;
+}
+
+.container__conteudo-canva {
+    background: var(--fundo-degrade-segundario);
+    height: 253px;
+    padding-top: 0.2em;
+}
+
+.container__favoritos {
+    margin-top: 2em;
+}
+
+.favoritos__titulo {
+    color: var(--cor-segundario);
+    margin: 1em;
+    font-size: 1.25rem;
+}
+
+.favoritos__imagem, .imagem-icone, .imagem__fotos-favoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.imagem__texto {
+    color: var(--cor-segundario);
+    font-size: 0.875rem;
+    margin: 0 2em;
+}
+
+.texto__link {
+    color: var(--cor-primarial);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo__imagem {
+        display: none;
+    }
+
+    .conteudo__apresentacao{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    .conteudo__titulo, .titulo__negrito {
+        font-size: 64px;
+    }
+
+    .conteudo__informacoes-imagem, .conteudo__informacoes-paisagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 8em 10em 8em;
+    }
+
+    .informacoes__imagem{
+        height: 128px;
+        width: 135.13px;
+    }
+
+    .informacoes-imagem {
+        margin: 0 5em;
+        text-align: left;
+    }
+
+    .informacoes-imagem__texto, .conteudo__link {
+        font-size: 24px;
+    }
+    
+    .container__conteudo-perguntas, .container__conteudo-canva {
+        height: 475px;
+    }
+
+    .conteudo-perguntas__titulo-perguntas, .conteudo__titulo-perguntas, .conteudo-canva__titulo-perguntas, .informacoes-imagem__titulo, .favoritos__titulo{
+        font-size: 34px;
+    }
+
+    .conteudo-perguntas__texto, .conteudo__texto, .conteudo-canva__texto{
+        font-size: 24px;
+        margin: 7em 8em 5em 8em;
+    }
+
+    .imagem__texto {
+        font-size: 24px;
+        margin: 1em 8em;
+    }
+
+    .imagem {
+        height: 237px;
+        width: 446.4px;
+    }
+
+    .imagem__icone {
+        height: 65.85px;
+        width: 72px;
+    }
+
+    .imagem__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .conteudo__imagem {
+        display: block;
+        height: 484px;
+        width: 525px;
+        margin: 10em 10em 2em 0;
+    }
+
+    .container__conteudo {
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+    }
+
+    .conteudo__apresentacao {
+        margin-top: 5em;
+    }
+
+    .conteudo__informacoes-imagem {
+        margin: 10em 20em 20em 20em;
+    }
+
+    .conteudo__informacoes-paisagem {
+        margin: 20em 20em 0 20em;
+    }
+
+    .container__conteudo-perguntas, .container__conteudo-canva {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .conteudo-perguntas__titulo-perguntas, .conteudo-canva__titulo-perguntas, .conteudo__titulo-perguntas {
+        margin-top: 5.5em;
+    }
+
+    .container__conteudo-formato {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .imagem-icone {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8em;
+    }
+
+    .imagem__fotos-favoritos {
+        display: flex;
+        align-items: baseline;
+        text-align: justify;
+        margin-top: 15em;
+    }
+
+    .imagem {
+        width: 553px;
+        height: 293.6px;
+    }
+}

@@ -1,0 +1,196 @@
+.cabecalho {
+    height: 50px;
+    background: var(--degrade);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+}
+
+.cabecalho__titulo {
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.cabecalho__link {
+    color: var(--cor-primarial);
+    text-decoration: none;
+}
+
+.navegacao__menu-hambugues {
+    height: 25px;
+    width: 25px;
+    background-image: url("../image/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding-left: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    background-color: var(--cor-botao);
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.navegacao__menu:checked ~ .lista-menu{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.navegacao__menu:checked ~ .navegacao__rotulo {
+    background-color: var(--cor-botao);
+    padding: 0.9em 0;
+    border-radius: 6px;
+}
+
+.lista-menu__link__login {
+    font-size: 10px;
+    padding: 0 1em;
+}
+
+.lista-menu__link {
+    font-size: 10px;
+    padding: 1em;
+}
+
+.lista-menu__item, .lista-menu__item__login, .lista-menu__item__favoritos {
+    text-transform: uppercase;
+    padding: 0.2em;
+}
+
+.lista-menu__item__favoritos:hover {
+    background: var(--degrade-segundario);
+    border-radius: 0 0 6px 0;
+}
+
+.lista-menu__item__login:hover {
+    background: var(--degrade-segundario);
+    border-radius: 0 6px 0 0;
+}
+
+.lista-menu__item:hover{
+    background: var(--degrade-segundario);
+}
+
+.lista-menu__link, .lista-menu__link__login {
+    text-decoration: none;
+    color: var(--cor-segundario);
+    font-weight: 400;
+}
+
+.navegacao__menu {
+    display: none;
+}
+
+.lista-menu__tablet, .navegacao__lista, .lista__link__deskot{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        height: 80px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 24px;
+    }
+
+    .navegacao__menu-hambugues {
+        height: 34px;
+        width: 40.61px;
+    }
+
+    .navegacao__cabecalho{
+        margin: 0 2em 0 auto;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .lista__link {
+        text-decoration: none;
+        color: var(--cor-segundario);
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0.5em;
+    }
+
+    .lista__link:hover {
+        background: var(--cor-botao);
+        padding: 0.5em;
+        border-radius: 8px;
+    }
+
+    .lista-menu__item__login, .lista-menu__item, .lista-menu, .lista-menu__item__favoritos {
+        display: none;
+    }
+
+    .lista-menu__tablet {
+        position: absolute;
+    }
+
+    .lista-tablet__item__cadastre-se, .lista-tablet__item__loga-se, .lista-tablet__item {
+        padding: 0.5em;
+        font-size: 20px;
+    }
+
+    .lista-tablet__item__cadastre-se:hover {
+        background: var(--degrade-segundario);
+        border-radius: 0 6px 0 0;
+    }
+
+    .lista-tablet__item__loga-se:hover {
+        background: var(--degrade-segundario);
+        border-radius: 0 0 6px 0;
+    }
+
+    .lista-tablet__item:hover {
+        background: var(--degrade-segundario);
+    }
+
+
+    .lista-tablet__link {
+        text-decoration: none;
+        color: var(--cor-segundario);
+        font-weight: 400;
+    }
+
+    .navegacao__menu:checked ~.lista-menu__tablet {
+        display: block;
+        background-color: var(--cor-botao);
+        border-radius: 0 6px 6px 0;
+    }
+
+    .navegacao__menu:checked ~ .navegacao__rotulo {
+        padding: 1.2em 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .navegacao__menu-hambugues {
+        display: none;
+    }
+
+    .lista__link__deskot {
+        display: block;
+        text-decoration: none;
+        color: var(--cor-segundario);
+        font-weight: 400;
+        font-size: 20px;
+        padding: 0.5em;
+    }
+
+    .lista__link__deskot:hover {
+        background: var(--cor-botao);
+        padding: 0.5em;
+        border-radius: 8px;
+    }
+}
